@@ -26,8 +26,8 @@
 <body>
     <span id="timer">00:00</span>
     <script>
-        let duration = 80; // in seconds, e.g. 5 minutes
-        let flashAt = 60;  // flash the screen when only 60 seconds are left
+        let duration = {{ duration }};
+        let flashAt = {{ flash_start }};
         let flashDuration = 10; // flash for 10 seconds
 
         function updateTimerDisplay(seconds) {
